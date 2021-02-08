@@ -11,10 +11,10 @@
   <title>Fuel Dashboard</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 
   <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
+  <link href="assets/css/simple-sidebar.css" rel="stylesheet">
   <!-- Custom styles for this template -->
   <link href="vendor/icons/bootstrap-icons" rel="stylesheet">
   

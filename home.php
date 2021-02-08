@@ -11,7 +11,7 @@
   <title>Fuel Dashboard</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
    <link href="css/style.css" rel="stylesheet">
  
   
@@ -64,7 +64,7 @@
 
     </div>
     <div class="col-md-6 section-2">
-      <img src="img/banner-img.jpg" class="img-banner" style="">
+      <img src="assets/images/banner-img.jpg" class="img-banner" style="">
     </div>
   </div>
 </div>
