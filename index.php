@@ -1,3 +1,4 @@
+<?php require ("database/connection.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,18 +9,21 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Dashboard</title>
+  <title>Home</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-   <link href="css/user_dashboard.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+   <link href="assets/css/styl.css" rel="stylesheet">
+   <link href="assets/css/home.css" rel="stylesheet">
+   <style>
+ 
+   </style>
 </head>
 
 <body>
 <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-nav navbar-fixed">
-  <a class="navbar-brand " href="#" style="color: white;">MedicalHub</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">MedicalHub</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -33,89 +37,39 @@
         <a class="nav-link" href="#"></a>
       </li>
     </ul>
-      
-      <p style="color: white;">Sign out</p>
+    <a class="btn-login" href="pages/login.php" role="button">Login</a>
+    <a class="btn-home btn-started" href="pages/register.php" role="button">Sign Up</a>
     
   </div>
 </nav> <!-- End of navigation -->
-
 <!-- Banner -->
-<div class="container-sm">
-  <!-- Segment one -->
-  <div class="row segment-1"> 
-    <div class="col-md-6">
-   <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Kuhusu upatikanaji wa 
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
-  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-  <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
-</svg>
-    </h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-dashboard">Toa sasa</a>
-  </div>
-</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 section-1">
+      <h1 class="banner-text">
+               The platform for health <br>
+                <span>services statistics</span> and <br>
+                analysis<span></span>
+      </h1>
+      <br>
+      <h4>
+        <q>
+          Health is a state of complete physical, 
+          mental, and social well-being and not
+          merely the absence of disease or infirmity
+        </q>
+      </h4>
+      <div class="form-group">
+      <input type="email" class="subscribe-input" id="usr" placeholder="Your Email">
+      <a class="subscribe-btn" href="#" role="button">Subscribe</a>
+      </div>
 
     </div>
-    <div class="col-md-6 ">
-      <div class="card">
-      <div class="card-body">
-     <h5 class="card-title">Kuhusu huduma za mama</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-dashboard">Toa sasa</a>
+    <div class="col-md-6 section-2">
+      <img src="assets/images/banner-img.jpg" class="img-banner" >
+    </div>
   </div>
 </div>
-    </div>
-  </div> <!-- End of segment one -->
-  <!-- Segment two -->
-  <div class="row segment-1"> 
-    <div class="col-md-6">
-   <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Kuhusu huduma za mtoto</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-dashboard">Toa sasa</a>
-  </div>
-</div>
-
-    </div>
-    <div class="col-md-6 ">
-      <div class="card">
-      <div class="card-body">
-     <h5 class="card-title">Kuhusu huduma za wazee</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-dashboard">Toa sasa</a>
-  </div>
-</div>
-    </div>
-  </div> <!-- End of segment two -->
-  <!-- Segment three -->
-  <div class="row segment-1"> 
-    <div class="col-md-6">
-   <div class="card">
-  <div class="card-body">
-    <h5 class="card-title">Kuhusu miundombimu ya hospitali</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-dashboard">Toa sasa</a>
-  </div>
-</div>
-
-    </div>
-    <div class="col-md-6 ">
-      <div class="card">
-      <div class="card-body">
-     <h5 class="card-title">Kuhusu upatikanaji wa dawa</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-dashboard">Toa sasa</a>
-  </div>
-</div>
-    </div>
-  </div> <!-- End of segment three -->
-  <br>
-</div>
-
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

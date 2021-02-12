@@ -1,22 +1,4 @@
 
-/*banner design*/
-
-.section-1{
-	
-	height: 600px;
-}
-.section-2{
-	
-	height: 600px;
-}
-.img-banner{
-	max-width: 540px; 
-	height: 580px;
-}
-.banner-text{
-	font-weight: bold;
-	margin-top: 90px;
-}
 .subscribe-input{
 	display: block;
   width: 70%;
@@ -41,6 +23,10 @@
 .segment-1{
 	margin-top: 50px;
 }
+a:hover{
+  text-align: none !important; 
+}
+
 
 /* Regstration form style */
 .register-input{
@@ -57,9 +43,6 @@
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-
-}
-.register-form{
 
 }
 
@@ -89,17 +72,20 @@
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .register-btn{
-	color: #fff;
-  	background-color: #0562DC;
+	  color: #fff;
+  	background-color: #a5a5a5;
   	border-color: #007bff;
   	height: 45px;
 }
 
 /*Survey form */
-.btn-dashboard{
-  color: #0562DC;
-  border: 2px solid #0562DC;
-}
+
 .survey-form{
-  border: 1px solid black;
+
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+
+
+/* Home page styling */
