@@ -17,13 +17,17 @@ if(isset($_POST["submit"])){
             $userid = $row["acc_id"];
             $phone = $row["phone_number"];
             $level = $row["level"];
+            $fname = $row["first_name"];
+            $lname = $row["last_name"];
             //echo $level;
            // echo $usernamedb;
             if ($level == "USER"){
-                $_SESSION["phone_number"]= $phone;
-                $_SESSION["level"] = $level;
-                echo $_SESSION["phone_number"];
-              // header('location:../pages/user_dashboard.php');
+                $_SESSION["phone_number"];
+                $_SESSION["first_name"] = $fname;
+                $_SESSION["last_name"] = $lname;
+                $_SESSION["level"];
+                //echo $_SESSION["last_name"];
+              header('location:../pages/user_dashboard.php');
 
             }else{
                 echo "

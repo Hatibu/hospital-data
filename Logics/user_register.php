@@ -39,8 +39,9 @@ if (isset($_POST["submit"])) {
 				success
 				";
 				$level = "USER";
-				$sql2 = "INSERT INTO account_tbl (phone_number,pass_word,level) VALUES ('".$phone_number."','".$pass_word."','".$level."')";
+				$sql2 = "INSERT INTO account_tbl (first_name,last_name,phone_number,pass_word,level) VALUES ('".$first_name."','".$last_name."','".$phone_number."','".$pass_word."','".$level."')";
 				$query = mysqli_query($connection,$sql2);
+				 header('location:../pages/login.php');
 
 			}
 
